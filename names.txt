@@ -2,4 +2,9 @@ const {faker} = require("@faker-js/faker");
 for (let i=1; i<=1000; i++){
  let names = faker.name.findName();
  console.log(i, names); 
+ if(names <=1000){
+  console.log ( "El proceso ha terminado satisfactoriamente")
+}else{
+  console.log ("Error")
+}
  }
